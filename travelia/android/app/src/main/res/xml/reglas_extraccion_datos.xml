@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Reglas de extraccion de datos (Android 12 y superior).
+
+  Se excluye por completo la aplicacion tanto de las copias de seguridad en
+  la nube como de la transferencia entre dispositivos. Los datos de Travelia
+  viven en Cloud Firestore y se recuperan al iniciar sesion, por lo que no
+  hay necesidad de respaldar el almacenamiento local, que contiene el token
+  de sesion.
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <exclude domain="root" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="file" path="." />
+    </cloud-backup>
+    <device-transfer>
+        <exclude domain="root" path="." />
+        <exclude domain="database" path="." />
+        <exclude domain="sharedpref" path="." />
+        <exclude domain="file" path="." />
+    </device-transfer>
+</data-extraction-rules>

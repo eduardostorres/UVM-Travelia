@@ -1,0 +1,43 @@
+# ---------- Flutter / Dart ----------
+travelia/.dart_tool/
+travelia/.packages
+travelia/build/
+travelia/.flutter-plugins
+travelia/.flutter-plugins-dependencies
+travelia/pubspec.lock
+**/generated_plugin_registrant.dart
+
+# ---------- Android ----------
+travelia/android/.gradle/
+travelia/android/local.properties
+travelia/android/app/debug/
+travelia/android/app/profile/
+travelia/android/app/release/
+travelia/.gradle/
+*.iml
+
+# ---------- Credenciales y configuración sensible ----------
+# Control de seguridad: la configuración del proyecto Firebase y las claves
+# de firma NO se versionan. Se documenta en el reporte de pruebas estáticas.
+travelia/android/app/google-services.json
+travelia/lib/firebase_options.dart
+travelia/android/key.properties
+*.jks
+*.keystore
+.env
+.env.*
+
+# ---------- Sistema operativo / editor ----------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/settings.json
+*.swp
+
+# ---------- Temporales ----------
+*.log
+
+# ---------- Símbolos de desofuscación ----------
+# Permiten revertir la ofuscación del código Dart; se conservan fuera del
+# repositorio junto con el keystore.
+travelia/build/symbols/
